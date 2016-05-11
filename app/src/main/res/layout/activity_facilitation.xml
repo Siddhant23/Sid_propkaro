@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_toolbar"
+            android:fitsSystemWindows="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="#e5e5e5" >
+
+        <Button
+            android:id="@+id/et_location"
+            style="@style/style_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:hint="Enter a location"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="false"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textColorHint="#99000000"
+            android:textCursorDrawable="@drawable/cusorcolor"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnr_whatisfac_center"
+        android:layout_below="@+id/rel1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mapp23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="4dp"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="2dp" >
+
+                    <LinearLayout
+                        android:id="@+id/mapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            class="com.google.android.gms.maps.MapFragment" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rely1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lnr_list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#475069"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Nearby Facilitation Centers"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.propkaro.facilitation.ExpandableHeightListView
+                android:id="@+id/list_faccility_center2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rely1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#f2f2f2"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@android:color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/rely2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_faccility_center2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lnr_list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#475069"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Other Facilitation Centers"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.propkaro.facilitation.ExpandableHeightListView
+                android:id="@+id/list_faccility_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rely2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#f2f2f2"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@android:color/transparent" >
+            </com.propkaro.facilitation.ExpandableHeightListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnr_whatisfac_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btn_whatisfaccentre"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_round_selector"
+            android:gravity="center"
+            android:text="What is a Facilitation Center?"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            android:gravity="center" >
+
+            <include layout="@layout/adapter_timeline_post1" />
+        </RelativeLayout>
+
+        <com.propkaro.util.CircularProgressView
+            android:id="@+id/progressView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_round_selector"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lnr_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_round_selector"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_tab_prop_call1" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences"
+                android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                android:padding="5dp"
+                android:text="Call User"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

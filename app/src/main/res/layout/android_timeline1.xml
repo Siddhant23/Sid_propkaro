@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2" >
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/lmain"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" />
+
+    <com.tundem.widget.gridview.AnimatedGridView
+        android:id="@+id/list_avail_pc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnr_btn"
+        android:layout_below="@+id/search_view"
+        android:divider="@android:color/transparent" />
+
+    <com.propkaro.util.CircularProgressView
+        android:id="@+id/progressView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:padding="0dp" />
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_bg_round_selector"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lnr_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/btn_select_city"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:background="@drawable/btn_bg_round_selector"
+            android:padding="5dp"
+            android:text="Select City"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_select_user_type"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:background="@drawable/btn_bg_round_selector"
+            android:padding="5dp"
+            android:text="Select User Type"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

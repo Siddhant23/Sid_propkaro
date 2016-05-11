@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    android:elevation="2dp"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    <RelativeLayout
+        android:id="@+id/rl_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="18dp"
+        android:foregroundTint="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_tab_plus" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:icon="@mipmap/ic_search_connect"
+        android:layout_gravity="right|center_vertical"
+        android:foregroundTint="@color/white" />
+
+</android.support.v7.widget.Toolbar>

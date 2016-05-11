@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_toolbar_grid"
+            android:fitsSystemWindows="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rel_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_round_selector"
+            android:padding="5dp"
+            android:text="Friends"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_round_selector"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/list_my_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lmain"
+            android:background="#f2f2f2"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

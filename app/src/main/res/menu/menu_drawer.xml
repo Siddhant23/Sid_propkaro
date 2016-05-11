@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="none" >
+        <item
+            android:id="@+id/menu_prop"
+            android:icon="@mipmap/ic_menu_property_center"
+            android:visible="false"
+            android:title="Property Center"/>
+        <item
+            android:id="@+id/menu_timeline"
+            android:icon="@mipmap/ic_menu_property_center"
+            android:visible="false"
+            android:title="My Timeline"/>
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@mipmap/ic_menu_profile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/menu_myList"
+            android:icon="@mipmap/ic_menu_my_listing"
+            android:title="My Listings"/>
+        <item
+            android:id="@+id/menu_post_listing"
+            android:icon="@mipmap/ic_menu_post_listing"
+            android:title="Post Listing"/>
+        <item
+            android:id="@+id/menu_favorite"
+            android:icon="@mipmap/ic_menu_shortlist"
+            android:visible="false"
+            android:title="Shortlisted"/>
+        <item
+            android:id="@+id/menu_connections"
+            android:icon="@mipmap/ic_menu_connection"
+            android:visible="false"
+            android:title="Connections"/>
+    </group>
+    <!-- The drawer itesm below have been classified into groups -->
+
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="none" >
+        <item
+            android:id="@+id/menu_mandated"
+            android:icon="@mipmap/ic_menu_mandate"
+            android:visible="true"
+            android:title="Mandated Properties"/>
+        <item
+            android:id="@+id/menu_notification"
+            android:icon="@mipmap/ic_notifications"
+            android:title="Notification"/>
+        <item
+            android:id="@+id/menu_facilitation"
+            android:icon="@mipmap/ic_menu_facilitation"
+            android:title="Facilitation Center"/>
+        <item
+            android:id="@+id/menu_videos"
+            android:icon="@mipmap/ic_menu_video"
+            android:visible="false"
+            android:title="Videos"/>
+    </group>
+    <group
+        android:id="@+id/group_3"
+        android:checkableBehavior="none" >
+        <item
+            android:id="@+id/menu_rate"
+            android:icon="@mipmap/ic_menu_rate_us"
+            android:title="Rate Us"/>
+        <item
+            android:id="@+id/menu_support"
+            android:icon="@mipmap/ic_menu_support"
+            android:title="Help &amp; Support"/>
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@mipmap/ic_menu_logout"
+            android:title="Logout"/>
+    </group>
+
+    <!-- The drawer items below have been categorized according to headers -->
+
+</menu>

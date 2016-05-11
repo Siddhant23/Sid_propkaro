@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#11000000" />
+
+    <TextView
+        android:id="@+id/txtTotalLikes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+        android:paddingRight="@dimen/feed_item_status_pad_left_right"
+        android:text="status message"
+        android:textColorLink="@color/link" />
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbImage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_row_selector"
+            android:drawableLeft="@mipmap/ic_like"
+            android:drawablePadding="3dp"
+            android:paddingLeft="3dp"
+            android:text="Like"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_row_selector"
+            android:drawableLeft="@mipmap/ic_comment"
+            android:drawablePadding="3dp"
+            android:paddingLeft="3dp"
+            android:text="Comment"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_row_selector"
+            android:drawableLeft="@mipmap/ic_share"
+            android:drawablePadding="3dp"
+            android:paddingLeft="3dp"
+            android:text="Share"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/searchresturants"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/obino_xmlimg_rect_curvedbg_white"
+            android:cursorVisible="true"
+            android:drawableRight="@mipmap/ic_search"
+            android:ems="15"
+            android:focusableInTouchMode="true"
+            android:hint="Search"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#dfdfdf"
+            android:textCursorDrawable="@drawable/cusorcolor"
+            android:textSize="15sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_avail_my_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:background="#f2f2f2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <com.propkaro.util.CircularProgressView
+        android:id="@+id/progressView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="0dp" />
+
+</RelativeLayout>

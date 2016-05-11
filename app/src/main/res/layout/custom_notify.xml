@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * 
+ * This file is part of "Android Paginated ListView Demo".
+ * 
+ * "Android Paginated ListView Demo" is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3.
+ *
+ * "Android Paginated ListView Demo" is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License version 3
+ * along with this program.  If not, see <http://www.gnu.org/licenses/gpl-3.0.html/>
+ */
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_notify_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_notify"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notify_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#22000000"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_notify_app_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="false"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_notify_app_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_notify_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="2dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/Gray" />
+            <TextView
+                android:id="@+id/tv_notify_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="2dip"
+                android:text=""
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_notify_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="2dip"
+                android:text="07:00 PM"
+                android:textColor="@color/Gray"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

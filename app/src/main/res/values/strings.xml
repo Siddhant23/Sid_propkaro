@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PropKaro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Drawer_open</string>
+    <string name="drawer_close">Drawer_close</string>
+    <string name="title_activity_property_center">PropertyCenterActivity</string>
+    <string name="title_activity_client_infromation">ClientInfromation</string>
+    <string name="search_label">Client Information</string>
+    <string name="search_hint">Type what you want to search</string>
+    <string name="spinner_prop">Choose a Property Type </string>
+    <string name="spinner_user">Choose a user Type </string>
+    <string name="spinner_owner">Choose a ownerhip </string>
+    <string name="spinner_category">Choose a Category Type</string>
+    <string name="spinner_city">Select City</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+    <string name="app_description"></string>
+    <string name="title_activity_user_property_details">UserPropertyDetailsActivity</string>
+
+    <!-- The following are reserved skus defined by Market for testing. -->
+    <string name="android_test_canceled">android.test.canceled</string>
+    <string name="android_test_purchased">android.test.purchased</string>
+    <string name="android_test_item_unavailable">android.test.item unavailable</string>
+    <string name="android_test_refunded">android.test.refunded</string>
+    <string name="edit_subscriptions">Edit Subscriptions</string>
+    <string name="forgot_password_or_username_">Forgot Password or Username?</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Server.</string>
+    <string name="server_registered">Server: successfully added device!</string>
+    <string name="server_unregistered">Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Server (%1$s).</string>
+
+    <string name="phon"><u>+91-9717798987</u></string>
+    <string name="toll_free"><u>1800 532 4747</u></string>
+    <string name="info"><u>info@propkaro.com</u></string>
+    <string name="share_propkaro"><u>Hi, you are invited to join the biggest peer to peer real estate network. https://play.google.com/store/apps/details?id=com.propkaro</u></string>
+
+    <string name="com_shamanland_facebook">Facebook</string>
+    <string name="com_shamanland_like">Log in with Facebook</string>
+    <string name="com_shamanland_share">Share</string>
+    <string name="com_shamanland_recommend">Recommend</string>
+    <string name="com_shamanland_facebook_like_box_text_default">0</string>
+    <string name="com_shamanland_facebook_like_activity_error">Action \'like\' could not be done</string>
+
+    <string name="title_activity_grid">Propkaro</string>
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about"> </string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+</resources>

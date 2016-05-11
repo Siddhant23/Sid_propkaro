@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@mipmap/cross_tab" android:state_focused="true" android:state_enabled="false"/>
+<item android:drawable="@mipmap/ic_tab_prop_delete" android:state_focused="true" android:state_enabled="true"/>
+<item android:drawable="@mipmap/ic_tab_prop_repost" android:state_enabled="false"/>
+<item android:drawable="@mipmap/email" android:state_pressed="true"/>
+<item android:drawable="@mipmap/heart_red" />
+
+</selector>

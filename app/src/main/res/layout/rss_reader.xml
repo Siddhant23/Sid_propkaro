@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header_app"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#0d9ea6"
+        android:visibility="visible" >
+
+     <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_heading_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Real Estate News"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_header_details"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/rl_header_app"
+        android:background="@mipmap/strip_news"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/rssfeed_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header_details"
+        android:background="@android:color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="5dip"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@drawable/grid_row_selector_default"
+        android:numColumns="1"
+        android:paddingBottom="0.2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="0.2dip"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout>
